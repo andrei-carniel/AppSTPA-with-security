@@ -10,12 +10,12 @@ System requirements:
 	
 To run the application, download the folder with the version of the desired application, for instance:
 ```
-app_2.0.1
+app_2.0.2
 ```
 
 Open the folder and execute "app.exe", for instance:
 ```
-./App/app_2.0.1/app.exe
+./app_2.0.2/app.exe
 ```
 
 

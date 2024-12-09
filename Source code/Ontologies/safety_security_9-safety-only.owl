@@ -1,0 +1,2455 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure-safety#"
+     xml:base="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure-safety"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:cont="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure-safety"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#accomplishes -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#accomplishes"/>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#associatedToSafetyConstraints -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#associatedToSafetyConstraints"/>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#attendsTheGoalOfTheSystem -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#attendsTheGoalOfTheSystem"/>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#caresWithLoss -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#caresWithLoss"/>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#defines -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#defines"/>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#definesControllerConstraints -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#definesControllerConstraints">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#defines"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#definesSafetyConstraint -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#definesSafetyConstraint">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#defines"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#definesUCA -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#definesUCA">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#defines"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Saf_UCA"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#has -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#has"/>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#hasAlgorithm -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#hasAlgorithm">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#has"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#isPartOfController"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#hasCausalFactorA -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#hasCausalFactorA">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#has"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#presentInLossScenarioA"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#hasCausalFactorB -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#hasCausalFactorB">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#has"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#presentInLossScenarioB"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#hasComponent -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#hasComponent">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#has"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#hasControlActionActuator -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#hasControlActionActuator">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#has"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#hasControlActionCP -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#hasControlActionCP">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#has"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#hasControlActionHLC_CP -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#hasControlActionHLC_CP">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#has"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#hasControlActionHLC_Controller -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#hasControlActionHLC_Controller">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#has"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#hasControllerConstraints -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#hasControllerConstraints">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#has"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#hasFeedbackCP -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#hasFeedbackCP">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#has"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#hasFeedbackCP_to_Controller -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#hasFeedbackCP_to_Controller">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#has"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#hasFeedbackCP_to_HLC -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#hasFeedbackCP_to_HLC">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#has"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#hasFeedbackController -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#hasFeedbackController">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#has"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#hasProcessModel -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#hasProcessModel">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#has"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#isPartOfController"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#hasRationale -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#hasRationale">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#has"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#hasSafetyRequirement -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#hasSafetyRequirement">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#has"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#hasValue -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#hasValue">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#has"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#hasValuesOfContext -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#hasValuesOfContext">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#has"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#presentInContext_Value"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#hasVariables -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#hasVariables">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#has"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#hasVariablesOfContext -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#hasVariablesOfContext">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#has"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#presentInContext_Variable"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#identifiesSafetyRequirement -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#identifiesSafetyRequirement">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Saf_Safety_recommendation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#isControlAction -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#isControlAction"/>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#isPartLinkActuatorCP -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#isPartLinkActuatorCP">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Link_actuator_CP"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#isPartLinkCP_Sensor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#isPartLinkCP_Sensor">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Link_CP_sensor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#isPartLinkControllerActuator -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#isPartLinkControllerActuator">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Link_controller_actuator"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#isPartLinkControllerCP -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#isPartLinkControllerCP">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Link_controller_CP"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#isPartLinkControllerHLC -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#isPartLinkControllerHLC">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Link_controller_HLC"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#isPartLinkHLC_CP -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#isPartLinkHLC_CP">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Link_HLC_CP"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#isPartLinkHLC_Controller -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#isPartLinkHLC_Controller">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Link_HLC_controller"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#isPartLinkSensorController -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#isPartLinkSensorController">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Link_sensor_controller"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#isPartLinkSensorHLC -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#isPartLinkSensorHLC">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Link_sensor_HLC"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#isPartOfController -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#isPartOfController">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#issues -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#issues"/>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#issuesControlActionActuator -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#issuesControlActionActuator">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#issues"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#issuesControlActionCP -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#issuesControlActionCP">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#issues"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#issuesControlActionHLC_CP -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#issuesControlActionHLC_CP">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#issues"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#issuesControlActionHLC_Controller -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#issuesControlActionHLC_Controller">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#issues"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#operatesProcessModel -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#operatesProcessModel"/>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#presentIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#presentIn"/>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#presentInContext_Value -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#presentInContext_Value">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#presentIn"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Context"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#presentInContext_Variable -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#presentInContext_Variable">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#presentIn"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Context"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#presentInLossScenarioA -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#presentInLossScenarioA">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#presentIn"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Saf_Loss_scenario_A"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#presentInLossScenarioB -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#presentInLossScenarioB">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#presentIn"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Saf_Loss_scenario_B"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#producesOutput -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#producesOutput">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#receives -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#receives"/>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#receivesControlActionActuator -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#receivesControlActionActuator">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#receives"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#receivesControlActionCP -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#receivesControlActionCP">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#receives"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#receivesControlActionHLC_CP -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#receivesControlActionHLC_CP">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#receives"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#receivesControlActionHLC_Controller -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#receivesControlActionHLC_Controller">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#receives"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#receivesFeedback -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#receivesFeedback">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#receives"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#receivesFeedbackCP_to_Controller -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#receivesFeedbackCP_to_Controller">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#receives"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#receivesFeedbackCP_to_HLC -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#receivesFeedbackCP_to_HLC">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#receives"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#receivesFeedbackController -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#receivesFeedbackController">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#receives"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#refinesSafetyConstraints -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#refinesSafetyConstraints"/>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#saf_conflicting -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#saf_conflicting">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Saf_Causal_factor_B"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#saf_inadequate_missing_delayed -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#saf_inadequate_missing_delayed">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Saf_Causal_factor_A"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#saf_inappropriate_missing -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#saf_inappropriate_missing">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Saf_Causal_factor_B"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#saf_incorrect_ineffective_updated -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#saf_incorrect_ineffective_updated">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Saf_Causal_factor_A"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#saf_leadsToHazards -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#saf_leadsToHazards">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#saf_leadsToLoss -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#saf_leadsToLoss">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#saf_missing_wrong -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#saf_missing_wrong">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Saf_Causal_factor_B"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#saf_unidentified-disturbance -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#saf_unidentified-disturbance">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Saf_Causal_factor_B"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#saf_wrong -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#saf_wrong">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Saf_Causal_factor_A"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#saf_wrong_missing -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#saf_wrong_missing">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Saf_Causal_factor_A"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#selects -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#selects"/>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#selectsControlActionActuator -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#selectsControlActionActuator">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#selects"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#selectsControlActionCP -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#selectsControlActionCP">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#selects"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#sends -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#sends"/>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#sendsCommunication -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#sendsCommunication">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#sends"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#sendsFeedbackCP -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#sendsFeedbackCP">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#sends"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#sendsFeedbackController -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#sendsFeedbackController">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#sends"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#sendsInput -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#sendsInput">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#sends"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#updateProcessModelByControlActionHLC_CP -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#updateProcessModelByControlActionHLC_CP">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#updates"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#updateProcessModelByControlActionHLC_Controller -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#updateProcessModelByControlActionHLC_Controller">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#updates"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#updateProcessModelByFeedbackCP -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#updateProcessModelByFeedbackCP">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#updates"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#updates -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#updates"/>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#updatesProcessModelByExternal -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#updatesProcessModelByExternal">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#updates"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2021/0/control-structure-safety#hasEnergy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure-safety#hasEnergy">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#has"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2021/0/control-structure-safety#isPartLinkCPController -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure-safety#isPartLinkCPController">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure-safety#Link_CP_controller"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2021/0/control-structure-safety#isPartLinkCP_HLC -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure-safety#isPartLinkCP_HLC">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure-safety#Link_CP_HLC"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2021/0/control-structure-safety#isPartLinkControllerExternal-system -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure-safety#isPartLinkControllerExternal-system">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure-safety#Link_controller_external-information"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2021/0/control-structure-safety#isPartLinkExternal-systemController -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure-safety#isPartLinkExternal-systemController">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure-safety#Link_external-information_controller"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2021/0/control-structure-safety#leadsToLossScenario -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure-safety#leadsToLossScenario">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Saf_Loss_scenario"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2021/0/control-structure-safety#saf_delayed_executed_not-executed_failure -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure-safety#saf_delayed_executed_not-executed_failure">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Saf_Causal_factor_B"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2021/0/control-structure-safety#saf_delayed_wrong_missing_failure -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure-safety#saf_delayed_wrong_missing_failure">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Saf_Causal_factor_A"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2021/0/control-structure-safety#saf_failure -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure-safety#saf_failure">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Saf_Causal_factor_A"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2021/0/control-structure-safety#saf_has_assumptions -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure-safety#saf_has_assumptions"/>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2021/0/control-structure-safety#saf_inappropriate_conflicting_missing -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure-safety#saf_inappropriate_conflicting_missing">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Saf_Causal_factor_B"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2021/0/control-structure-safety#sendsExternalInformation -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure-safety#sendsExternalInformation"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Actuator -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Actuator">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#isPartLinkActuatorCP"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Link_actuator_CP"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#isPartLinkControllerActuator"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Link_controller_actuator"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#receivesControlActionActuator"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Control_action_actuator"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure-safety#saf_delayed_executed_not-executed_failure"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Saf_Causal_factor_B"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Algorithm -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Algorithm">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#isPartOfController"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Controller"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#operatesProcessModel"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Process_model"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#saf_incorrect_ineffective_updated"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Saf_Causal_factor_A"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#selectsControlActionActuator"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Control_action_actuator"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#selectsControlActionCP"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Control_action_CP"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Context -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Context">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#definesUCA"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Saf_UCA"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#hasValuesOfContext"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Values"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#hasVariablesOfContext"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Variables"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Control_action -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Control_action">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#definesUCA"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Saf_UCA"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Control_action_CP -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Control_action_CP">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Control_action"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#isPartLinkControllerCP"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Link_controller_CP"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#saf_inappropriate_missing"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Saf_Causal_factor_B"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Control_action_HLC_CP -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Control_action_HLC_CP">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Control_action"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#isPartLinkHLC_CP"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Link_HLC_CP"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#saf_conflicting"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Saf_Causal_factor_B"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#updateProcessModelByControlActionHLC_CP"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Process_model"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Control_action_HLC_controller -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Control_action_HLC_controller">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Control_action"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#isPartLinkHLC_Controller"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Link_HLC_controller"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#updateProcessModelByControlActionHLC_Controller"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Process_model"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure-safety#saf_inappropriate_conflicting_missing"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Saf_Causal_factor_B"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Control_action_actuator -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Control_action_actuator">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Control_action"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#isPartLinkControllerActuator"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Link_controller_actuator"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#saf_inappropriate_missing"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Saf_Causal_factor_B"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Control_structure -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Control_structure">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure-safety#saf_has_assumptions"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure-safety#Saf_Assumption"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#accomplishes"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Saf_Goal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#hasComponent"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Actuator"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#hasComponent"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#HLC"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#hasComponent"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Sensor"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#hasComponent"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Controlled_process_CP"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#hasComponent"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Controller"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#hasComponent"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Link"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#receivesFeedback"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Feedback"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Controlled_process_CP -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Controlled_process_CP">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#isPartLinkActuatorCP"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Link_actuator_CP"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#isPartLinkCP_Sensor"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Link_CP_sensor"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#isPartLinkControllerCP"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Link_controller_CP"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#isPartLinkHLC_CP"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Link_HLC_CP"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#producesOutput"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Output"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#receivesControlActionCP"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Control_action_CP"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#receivesControlActionHLC_CP"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Control_action_HLC_CP"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure-safety#isPartLinkCPController"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure-safety#Link_CP_controller"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure-safety#isPartLinkCP_HLC"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure-safety#Link_CP_HLC"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Controller -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Controller">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Controller_class"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#hasAlgorithm"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Algorithm"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#hasControllerConstraints"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Controller_constraints"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#hasProcessModel"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Process_model"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#isPartLinkControllerActuator"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Link_controller_actuator"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#isPartLinkControllerCP"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Link_controller_CP"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#isPartLinkControllerHLC"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Link_controller_HLC"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#isPartLinkHLC_Controller"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Link_HLC_controller"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#isPartLinkSensorController"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Link_sensor_controller"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#receivesControlActionHLC_Controller"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Control_action_HLC_controller"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#receivesFeedbackCP_to_Controller"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Feedback_of_CP"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#sendsFeedbackController"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Feedback_of_controller"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure-safety#isPartLinkCPController"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure-safety#Link_CP_controller"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure-safety#isPartLinkControllerExternal-system"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure-safety#Link_controller_external-information"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure-safety#isPartLinkExternal-systemController"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure-safety#Link_external-information_controller"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure-safety#saf_failure"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Saf_Causal_factor_A"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#issuesControlActionActuator"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Control_action_actuator"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#issuesControlActionCP"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Control_action_CP"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Controller_class -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Controller_class"/>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Controller_constraints -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Controller_constraints"/>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Environmental_disturbances -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Environmental_disturbances">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#saf_unidentified-disturbance"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Saf_Causal_factor_B"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#External-information-sent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#External-information-sent">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#sendsCommunication"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Controller"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#updatesProcessModelByExternal"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Process_model"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure-safety#isPartLinkControllerExternal-system"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure-safety#Link_controller_external-information"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Feedback -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Feedback"/>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Feedback_of_CP -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Feedback_of_CP">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Feedback"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#isPartLinkSensorController"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Link_sensor_controller"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#isPartLinkSensorHLC"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Link_sensor_HLC"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#saf_inadequate_missing_delayed"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Saf_Causal_factor_A"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#updateProcessModelByFeedbackCP"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Process_model"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure-safety#isPartLinkCPController"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure-safety#Link_CP_controller"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure-safety#isPartLinkCP_HLC"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure-safety#Link_CP_HLC"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Feedback_of_controller"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Feedback_of_controller -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Feedback_of_controller">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Feedback"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#isPartLinkControllerHLC"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Link_controller_HLC"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#saf_inadequate_missing_delayed"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Saf_Causal_factor_A"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#HLC -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#HLC">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Controller_class"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#isPartLinkControllerHLC"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Link_controller_HLC"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#isPartLinkHLC_CP"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#HLC"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#isPartLinkHLC_Controller"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Link_HLC_controller"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#isPartLinkSensorHLC"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Link_sensor_HLC"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#receivesFeedbackCP_to_HLC"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Feedback_of_CP"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#receivesFeedbackController"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Feedback_of_controller"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure-safety#isPartLinkCP_HLC"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure-safety#Link_CP_HLC"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#issuesControlActionHLC_CP"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Control_action_HLC_CP"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#issuesControlActionHLC_Controller"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Control_action_HLC_controller"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Input -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Input">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#saf_missing_wrong"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Saf_Causal_factor_B"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#sendsInput"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Controlled_process_CP"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Link -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Link"/>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Link_CP_sensor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Link_CP_sensor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Link"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#hasFeedbackCP"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Feedback_of_CP"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Link_HLC_CP -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Link_HLC_CP">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Link"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#hasControlActionHLC_CP"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Control_action_HLC_CP"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Link_HLC_controller -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Link_HLC_controller">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Link"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#hasControlActionHLC_Controller"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Control_action_HLC_controller"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Link_actuator_CP -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Link_actuator_CP">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Link"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure-safety#hasEnergy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure-safety#Energy"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Link_controller_CP -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Link_controller_CP">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Link"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#hasControlActionCP"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Control_action_CP"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Link_controller_HLC -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Link_controller_HLC">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Link"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#hasFeedbackController"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Feedback_of_controller"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Link_controller_actuator -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Link_controller_actuator">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Link"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#hasControlActionActuator"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Control_action_actuator"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Link_sensor_HLC -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Link_sensor_HLC">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Link"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#hasFeedbackCP_to_HLC"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Feedback_of_CP"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Link_sensor_controller -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Link_sensor_controller">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Link"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#hasFeedbackCP_to_Controller"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Feedback_of_CP"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Output -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Output"/>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Process_model -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Process_model">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#isPartOfController"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Controller"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#saf_wrong"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Saf_Causal_factor_A"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#hasVariables"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Variables"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Saf_Causal_factor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Saf_Causal_factor"/>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Saf_Causal_factor_A -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Saf_Causal_factor_A">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Saf_Causal_factor"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#identifiesSafetyRequirement"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Saf_Safety_recommendation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#presentInLossScenarioA"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Saf_Loss_scenario_A"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Saf_Causal_factor_B -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Saf_Causal_factor_B">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Saf_Causal_factor"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#identifiesSafetyRequirement"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Saf_Safety_recommendation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#presentInLossScenarioB"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Saf_Loss_scenario_B"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Saf_Goal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Saf_Goal">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#caresWithLoss"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Saf_Loss_mishap"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Saf_Loss_mishap -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Saf_Loss_mishap">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#saf_leadsToLoss"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Saf_Loss_mishap"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Saf_Loss_scenario -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Saf_Loss_scenario">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#hasRationale"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Saf_Rationale"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#hasSafetyRequirement"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Saf_Safety_recommendation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Saf_Loss_scenario_A -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Saf_Loss_scenario_A">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Saf_Loss_scenario"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#hasCausalFactorA"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Saf_Causal_factor_A"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Saf_Loss_scenario_B -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Saf_Loss_scenario_B">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Saf_Loss_scenario"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#hasCausalFactorB"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Saf_Causal_factor_B"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Saf_Rationale -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Saf_Rationale"/>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Saf_Safety_constraint -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Saf_Safety_constraint">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#attendsTheGoalOfTheSystem"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Saf_Goal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Saf_Safety_recommendation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Saf_Safety_recommendation">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#definesSafetyConstraint"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Saf_Safety_constraint"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Saf_UCA -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Saf_UCA">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#definesControllerConstraints"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Controller_constraints"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#definesUCA"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Saf_UCA"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#isControlAction"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Control_action"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#refinesSafetyConstraints"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Saf_Safety_constraint"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure-safety#leadsToLossScenario"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Saf_Loss_scenario"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#saf_leadsToHazards"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Saf_hazard"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Saf_hazard -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Saf_hazard">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#definesUCA"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Saf_UCA"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#associatedToSafetyConstraints"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Saf_Safety_constraint"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Sensor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Sensor">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#isPartLinkCP_Sensor"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Link_CP_sensor"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#isPartLinkSensorController"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Link_sensor_controller"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#isPartLinkSensorHLC"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Link_sensor_HLC"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#sendsFeedbackCP"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Feedback_of_CP"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure-safety#saf_delayed_wrong_missing_failure"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Saf_Causal_factor_A"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Values -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Values">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#presentInContext_Value"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Context"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Variables -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Variables">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#presentInContext_Variable"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Context"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#hasValue"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Values"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2021/0/control-structure-safety#Applied_too_long -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure-safety#Applied_too_long">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure-safety#Saf_UCA_type"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2021/0/control-structure-safety#Energy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure-safety#Energy">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#isPartLinkActuatorCP"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Link_actuator_CP"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#isPartLinkCP_Sensor"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Link_CP_sensor"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2021/0/control-structure-safety#External-information-received -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure-safety#External-information-received">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#saf_wrong_missing"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Saf_Causal_factor_A"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#sendsCommunication"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Controller"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#updatesProcessModelByExternal"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Process_model"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure-safety#isPartLinkExternal-systemController"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure-safety#Link_external-information_controller"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2021/0/control-structure-safety#External-system -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure-safety#External-system">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure-safety#isPartLinkControllerExternal-system"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure-safety#Link_controller_external-information"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure-safety#isPartLinkExternal-systemController"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure-safety#Link_external-information_controller"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure-safety#sendsExternalInformation"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#External-information-sent"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2021/0/control-structure-safety#Link_CP_HLC -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure-safety#Link_CP_HLC">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Link"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#hasFeedbackCP"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Feedback_of_CP"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2021/0/control-structure-safety#Link_CP_controller -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure-safety#Link_CP_controller">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Link"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#hasFeedbackCP"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Feedback_of_CP"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2021/0/control-structure-safety#Link_controller_external-information -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure-safety#Link_controller_external-information">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Link"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2021/0/control-structure-safety#Link_external-information_controller -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure-safety#Link_external-information_controller">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Link"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2021/0/control-structure-safety#Not_provided -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure-safety#Not_provided">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure-safety#Saf_UCA_type"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2021/0/control-structure-safety#Out_of_order -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure-safety#Out_of_order">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure-safety#Saf_UCA_type"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2021/0/control-structure-safety#Provided -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure-safety#Provided">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure-safety#Saf_UCA_type"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2021/0/control-structure-safety#Saf_Assumption -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure-safety#Saf_Assumption">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#attendsTheGoalOfTheSystem"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Saf_Goal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2021/0/control-structure-safety#Saf_UCA_type -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure-safety#Saf_UCA_type">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#definesUCA"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Saf_UCA"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2021/0/control-structure-safety#Stopped_too_soon -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure-safety#Stopped_too_soon">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure-safety#Saf_UCA_type"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2021/0/control-structure-safety#Too_early -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure-safety#Too_early">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure-safety#Saf_UCA_type"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2021/0/control-structure-safety#Too_late -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure-safety#Too_late">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure-safety#Saf_UCA_type"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Actuator -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Actuator">
+        <rdf:type rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Actuator"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Algorithm -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Algorithm">
+        <rdf:type rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Algorithm"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#CP -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#CP">
+        <rdf:type rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Controlled_process_CP"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Environmental_disturbances -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Environmental_disturbances">
+        <rdf:type rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Environmental_disturbances"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#External-information-sent -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#External-information-sent">
+        <rdf:type rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#External-information-sent"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Feedback_of_controller -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Feedback_of_controller">
+        <rdf:type rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Feedback_of_controller"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Input -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Input">
+        <rdf:type rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Input"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Output -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Output">
+        <rdf:type rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Output"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Process_model -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Process_model">
+        <rdf:type rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Process_model"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Sensor -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Sensor">
+        <rdf:type rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Sensor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2021/0/control-structure-safety#Context -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure-safety#Context">
+        <rdf:type rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Context"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2021/0/control-structure-safety#Control_action_CP -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure-safety#Control_action_CP">
+        <rdf:type rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Control_action_CP"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2021/0/control-structure-safety#Control_action_HLC_CP -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure-safety#Control_action_HLC_CP">
+        <rdf:type rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Control_action_HLC_CP"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2021/0/control-structure-safety#Control_action_HLC_controller -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure-safety#Control_action_HLC_controller">
+        <rdf:type rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Control_action_HLC_controller"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2021/0/control-structure-safety#Control_action_actuator -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure-safety#Control_action_actuator">
+        <rdf:type rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Control_action_actuator"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2021/0/control-structure-safety#Controller -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure-safety#Controller">
+        <rdf:type rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Controller"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2021/0/control-structure-safety#Energy -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure-safety#Energy">
+        <rdf:type rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure-safety#Energy"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2021/0/control-structure-safety#External-information-received -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure-safety#External-information-received">
+        <rdf:type rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure-safety#External-information-received"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2021/0/control-structure-safety#Feedback_of_CP -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure-safety#Feedback_of_CP">
+        <rdf:type rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Feedback_of_CP"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2021/0/control-structure-safety#HLC -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure-safety#HLC">
+        <rdf:type rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#HLC"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2021/0/control-structure-safety#Link_CP_Controller -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure-safety#Link_CP_Controller">
+        <rdf:type rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure-safety#Link_CP_controller"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2021/0/control-structure-safety#Link_CP_hlc -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure-safety#Link_CP_hlc">
+        <rdf:type rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure-safety#Link_CP_HLC"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2021/0/control-structure-safety#Link_CP_sensor -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure-safety#Link_CP_sensor">
+        <rdf:type rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Link_CP_sensor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2021/0/control-structure-safety#Link_External-information_controller -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure-safety#Link_External-information_controller">
+        <rdf:type rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure-safety#Link_external-information_controller"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2021/0/control-structure-safety#Link_HLC_CP -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure-safety#Link_HLC_CP">
+        <rdf:type rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Link_HLC_CP"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2021/0/control-structure-safety#Link_HLC_controller -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure-safety#Link_HLC_controller">
+        <rdf:type rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Link_HLC_controller"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2021/0/control-structure-safety#Link_actuator_CP -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure-safety#Link_actuator_CP">
+        <rdf:type rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Link_actuator_CP"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2021/0/control-structure-safety#Link_controller_CP -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure-safety#Link_controller_CP">
+        <rdf:type rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Link_controller_CP"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2021/0/control-structure-safety#Link_controller_External-information -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure-safety#Link_controller_External-information">
+        <rdf:type rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure-safety#Link_controller_external-information"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2021/0/control-structure-safety#Link_controller_HLC -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure-safety#Link_controller_HLC">
+        <rdf:type rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Link_controller_HLC"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2021/0/control-structure-safety#Link_controller_actuator -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure-safety#Link_controller_actuator">
+        <rdf:type rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Link_controller_actuator"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2021/0/control-structure-safety#Link_sensor_HLC -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure-safety#Link_sensor_HLC">
+        <rdf:type rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Link_sensor_HLC"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2021/0/control-structure-safety#Link_sensor_controller -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure-safety#Link_sensor_controller">
+        <rdf:type rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Link_sensor_controller"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2021/0/control-structure-safety#Not_providing_causes_hazard -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure-safety#Not_providing_causes_hazard"/>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2021/0/control-structure-safety#Providing_causes_hazard -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure-safety#Providing_causes_hazard"/>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2021/0/control-structure-safety#Saf_System_level_hazards -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure-safety#Saf_System_level_hazards">
+        <rdf:type rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Saf_hazard"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2021/0/control-structure-safety#Saf_Time -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure-safety#Saf_Time"/>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2021/0/control-structure-safety#Saf_UCA_type -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure-safety#Saf_UCA_type">
+        <rdf:type rdf:resource="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure-safety#Saf_UCA_type"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2021/0/control-structure-safety#Stopped_too_soon_applied_too_long -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure-safety#Stopped_too_soon_applied_too_long"/>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2021/0/control-structure-safety#Too_early_too_late_out_of_order -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure-safety#Too_early_too_late_out_of_order"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Sensor">
+        <rdfs:comment>Son of Sensor</rdfs:comment>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Control_action_CP"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Control_action_HLC_CP"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Control_action_HLC_controller"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/andre/ontologies/2021/0/control-structure#Control_action_actuator"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
