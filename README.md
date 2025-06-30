@@ -1,5 +1,5 @@
 # AppSTPA with security
-New version of AppSTPA Tool
+New and frozen version of AppSTPA Tool
 
 # Project Documentation
 
